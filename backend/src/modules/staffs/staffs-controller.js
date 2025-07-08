@@ -11,7 +11,6 @@ const handleGetStaff = asyncHandler(async (req, res) => {
     const { id } = req.params;
     const staff = await processGetStaff(id);
     res.json(staff);
-
 });
 
 const handleReviewStaffStatus = asyncHandler(async (req, res) => {
